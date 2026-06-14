@@ -114,35 +114,6 @@ Go to http://localhost:3000
 7. Click the delete button to remove a task
 8. Click logout when you are done
 
-## Folder Structure
-
-TaskFlow/
-├── server.js (main file)
-├── package.json (dependencies)
-├── .gitignore
-├── README.md
-├── db/
-│   ├── database.js (database connection)
-│   └── setup.sql (create tables)
-├── routes/
-│   ├── auth.js (login/register routes)
-│   └── tasks.js (task CRUD routes)
-├── middleware/
-│   └── authMiddleware.js (protect routes)
-├── views/
-│   ├── partials/
-│   │   ├── header.ejs
-│   │   └── footer.ejs
-│   ├── login.ejs
-│   ├── register.ejs
-│   ├── dashboard.ejs
-│   ├── addTask.ejs
-│   ├── editTask.ejs
-│   └── error.ejs
-└── public/
-    ├── style.css
-    └── script.js
-
 ## Challenges I Faced
 
 The hardest part was learning how to use EJS partials because we didn't cover it much in class. I had to watch YouTube videos and read documentation to figure out how to reuse the header and footer on every page.
