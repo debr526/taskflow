@@ -2,9 +2,9 @@
 
 ## About The Project
 
-I built this task management app for my Node.js group project. It helps users keep track of things they need to do. You can create tasks, mark them as complete, edit them, or delete them. Each user has their own account so only they can see their tasks.
+We built this task management app for my Node.js group project. It helps users keep track of things they need to do. You can create tasks, mark them as complete, edit them, or delete them. Each user has their own account so only they can see their tasks.
 
-I worked on this project with my group member Ephrem. I did most of the backend work and Ephrem helped with frontend work and changes and testing.
+We worked on this project with my group member Ephrem. I did most of the backend work and Ephrem helped with frontend work and changes and testing.
 
 ## Group Members
 - Dayan - Backend developer (server, database, routes)
