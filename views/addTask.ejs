@@ -1,0 +1,59 @@
+<%- include('./partials/header') %>
+
+<div class="row justify-content-center">
+  <div class="col-md-8 col-lg-6">
+    <div class="card shadow-lg border-0">
+      <div class="card-body p-5">
+        <h2 class="text-center mb-4">
+          <i class="fas fa-plus-circle text-success"></i> Create New Task
+        </h2>
+
+        
+        <% if (typeof message !== 'undefined') { %>
+          <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <%= message %>
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          </div>
+        <% } %>
+
+        <form action="/tasks/add" method="POST">
+          <div class="mb-3">
+            <label for="title" class="form-label">Task Title <span class="text-danger">*</span></label>
+            <input 
+              type="text" 
+              class="form-control form-control-lg" 
+              id="title" 
+              name="title" 
+              placeholder="Enter task title" 
+              required
+            >
+            <small class="text-muted">Enter a clear and descriptive title for your task</small>
+          </div>
+
+          <div class="mb-4">
+            <label for="description" class="form-label">Description</label>
+            <textarea 
+              class="form-control" 
+              id="description" 
+              name="description" 
+              rows="5" 
+              placeholder="Enter task description (optional)"
+            ></textarea>
+            <small class="text-muted">Add more details about your task</small>
+          </div>
+
+          <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-success btn-lg">
+              <i class="fas fa-save"></i> Create Task
+            </button>
+            <a href="/tasks/dashboard" class="btn btn-outline-secondary btn-lg">
+              <i class="fas fa-times"></i> Cancel
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('./partials/footer') %>
